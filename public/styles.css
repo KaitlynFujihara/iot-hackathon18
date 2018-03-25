@@ -14,7 +14,6 @@ body {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
-
 #commute {
   width: 100%;
 }
@@ -54,11 +53,17 @@ body {
   text-align: left;
 }
 
+#problem {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
 #team, #product, #press, #goal, #problem, #idea, #distribution, #reach {
   text-align: center;
-  padding-top: 60px;
+  padding-top: 65px;
   margin-bottom: 50px;
-  margin-top: 50px;
+  margin-top: 75px;
 }
 #busdraw {
   height: 500px;
@@ -82,6 +87,7 @@ body {
 #navbar {
   width: 100%;
   position : fixed;
+  z-index: 2;
 }
 #header {
   background: linear-gradient(0deg, rgba(255,255,255,0), #1F4C88 70.71%);
