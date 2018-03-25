@@ -53,17 +53,13 @@ body {
   text-align: left;
 }
 
-#problem {
-  text-align: center;
-  margin-bottom: 50px;
-}
 
-
-#team, #product, #press, #goal, #problem, #idea, #distribution, #reach {
+#team, #product, #press, #problem, #goal, #idea, #distribution, #reach {
   text-align: center;
-  padding-top: 65px;
-  margin-bottom: 50px;
+  padding-top: 75px;
+  margin-bottom: 70px;
   margin-top: 75px;
+  min-height: 800px;
 }
 #busdraw {
   height: 500px;
