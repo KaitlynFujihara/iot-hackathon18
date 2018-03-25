@@ -3,15 +3,122 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./public/styles.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
-    <title></title>
+    <title>SeatPeek</title>
   </head>
-
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+      <a class="navbar-brand" href="https://seatpeek.firebaseapp.com/" id="purchase">Demo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#problem">Problem</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#idea">Idea</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#goal">Goal</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#distribution">Distribution</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#reach">Reach</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#press">Press</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+        </form>
+      </div>
+    </nav>
+    <div class="jumbotron" id="header">
+      <img src="./public/img/seatpeak.png" id="logo">
+    </div>
+    <div class="container">
+      <div id="slogan">
+        <h2>Giving people a sense of place, in a public space.</h2>
+      </div>
+      <iframe src="https://player.vimeo.com/video/261717277" width=100% height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <div id="problem">
+        <h2>The Problem:</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="./public/img/onebus.jpg" id="onebus">
+          </div>
+          <div class="col-md-6">
+            <img src="./public/img/86.jpg" id="commute">
+          </div>
+        </div>
+      </div>
+      <div id="idea">
+        <h2>The Idea: IoT on a Bus or Train</h2>
+        <h3>Tracks real time seat availability, temperature, air quality & other metrics</h3>
+        <img src="./public/img/busdraw.jpg"  alt="" id="busdraw">
+      </div>
+      <div id="goal">
+        <h2>The Goal: Get More People on Public Transit</h2>
+        <h3>Making transit a more personal experience where Riders feel like they have a sense of ownership in the shared space.</h3>
+        <img src="./public/img/google.jpg"  alt="" id="google">
+      </div>
+      <div id="distribution">
+        <h2>Distribution: GTFS-RT</h2>
+        <h3>Adding an element to GTFS-RT, a spec used by 850 Transit Agencies  to provide updates about their fleet to app devs (like google maps & Transit App).</h3>
+        <h4>Offer SeatPeek Pack for purchase!</h4>
+        <div id="seatpack">
+          <h3>The SeatPeek Pack:</h3>
+          <div class="floating">
+            <img src="./public/img/pack.png" alt="" id="backpack">
+          </div>
+          <h4>Your customized SeatPeek Pack includes:</h4>
+          <ul>
+            <li>Personalized consultation prior to signing ANY contracts</li>
+            <li>SeatSwitch™ sensors to put on every bus/train seat </li>
+            <li>Fast 24/7 support with our trained staff of SeatPeeps</li>
+            <li>Partnership with our installation team to get you up and running</li>
+          </ul>
+        </div>
+      </div>
+      <div id="reach">
+        <h1>Reach: IoT seat sensors  + annual license for backend</h1>
+        <img src="./public/img/chart.jpg" alt="" id="chart">
+      </div>
+      <div id="press">
+        <h1>Press</h1>
+        <div class="blurb">
+          <img src="./public/img/portland.jpg" alt="" id="portland">
+          <img src="./public/img/trimet-logo.png" alt="" class="trimet">
+          <h1 id="biketown">Bike Town Gains More Bus Riders</h1>
+          <div class="text" id="blurb1">
+            <p>This past June 2020, TriMet adapted the quickly-growing SeatSwitch™ that is sweeping the nation. If you have been living under a rock and/or you don't ride public transit (shame on you!), you may not have heard of this new technology called the SeatSwitch™. With the power of the SeatSwitch™, SeatPeek gathers data regarding the amount of occupied and unoccupied seats on a bus or MAX. This way, riders can see how crowded a bus is before boarding</p>
+          <p>(...Read More...)</p>
+        </div>
+        <div class="blurb" id="blurb2">
+          <img src="./public/img/priority.png" alt="" class="priority">
+          <img src="./public/img/disability.jpg" alt="" class="disability">
+          <h1>SeatPeek Essential For Those with Disabilities</h1>
+          <p>SeatPeek is changing lives of those with disabilities! Everyone is chatting about this new occupancy metric developed by SeatPeek that displays how crowded a bus or train is. Cities around the US are starting to utilize this new tool. How does this affect the disability community? People with physical disabilities can now view the occupancy of a train or bus before it arrives to see if there are seats available. This new metric not only helps those who are physically diabled, it also helps able-bodied people who want a seat, or people who get claustrophobic. People are buzzing about how SeatPeek is helping them save time. They aren't waiting at bus stops only to realize that they can't get on because the bus is full.</p>
+          <p>A national survey shows that the US has seen a 25% increase of people choosing to use public transit instead of driving or using a ride share company. This leads to less cars on the road, which results in less C02 emissions. SeatPeek also donates a portion of their profits to Tree Musketeers, an organization that plants trees in urban cities. Tree Musketeers has planted over 2,000 trees in cities from San Francisco to New York City in the past three years. SeatPeek also offers paid internships to recent high school graduates who are interested in bettering public transit in America</p>
+          <p>(...Read More...)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div id="footer">
+      <div class="container" id="foot">
+        <img src="./public/img/twitter.png" alt="" class="icon">
+        <img src="./public/img/email.png" alt="" class="icon">
+        <img src="./public/img/phone.png" alt="" class="icon">
+      </div>
+    </div>
   </body>
 </html>
